@@ -1,0 +1,11 @@
+.shop-vip-card {
+    /deep/ .el-input,
+    .el-select {
+        width: 100%!important
+    }
+    .detail-dialog {
+        /deep/ .el-row {
+            margin-bottom: 15px;
+        }
+    }
+}

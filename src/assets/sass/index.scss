@@ -1,0 +1,346 @@
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+}
+
+body,
+dl, dt, dd, ul, ol, li,
+h1, h2, h3, h4, h5, h6,
+pre, code, form, fieldset, legend, input, textarea,
+p, blockquote, th, td, button,
+article, aside, details, figcaption, figure, footer, header, menu, nav, section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: normal;
+}
+
+#nprogress .bar {
+    background-color: #e6a23c;
+}
+#nprogress .spinner{
+    top: 25px;
+}
+#nprogress .spinner-icon {
+    border-top-color: #e6a23c;
+    border-left-color: #aa732f;
+}
+
+//==========布局相关
+.textCenter {
+    text-align: center;
+}
+
+.solidtop1px {
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #999;
+}
+
+.solidbottom {
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: #999;
+}
+
+.solidbottom1px {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #999;
+}
+
+.margintop20 {
+    margin-top: 20px;
+}
+.marginbottom20 {
+    margin-bottom: 20px;
+}
+.margintop10 {
+    margin-top: 10px;
+}
+
+.marginleft20 {
+    margin-left: 20px;
+}
+
+.paddtop20 {
+    padding-top: 20px;
+}
+
+.paddbottom20 {
+    padding-bottom: 20px;
+}
+
+.pubpadd {
+    padding: 0 20px 20px;
+}
+
+.m-t-0{
+    margin-top: 0
+}
+.m-b-0{
+    margin-bottom: 0;
+}
+
+.xk-title {
+    width: 100%;
+    padding: 20px 0 5px;
+    border-radius: 6px;
+    margin-bottom: 0;
+    position: relative;
+    .vus-title {
+        height: 26px;
+        line-height: 26px;
+        padding-left: 10px;
+        font-size: 16px;
+        position: relative;
+        margin-bottom: 20px;
+        span {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 14px;
+            height: 24px;
+            background: url("../../assets/image/tile-icon.png") no-repeat;
+            background-size: 100% 100%;
+        }
+    }
+    .vus-btn {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+    .vus-bottom {
+        width: 100%;
+        height: 1px;
+        background-image: linear-gradient(-270deg, rgba(0, 0, 0, 0.08) 100%, rgba(0, 0, 0, 0.00) 0%);
+        margin-bottom: 20px;
+    }
+}
+
+.xk-menu {
+    position: relative;
+    flex-grow: 1;
+    padding-top: 30px;
+    overflow-y: auto;
+    .el-menu {
+        overflow: hidden;
+        border-right: none;
+        .icon-xk-menu {
+            font-size: 24px;
+            color: #89A4FD;;
+        }
+        .el-submenu.is-opened {
+            .el-submenu__title {
+                background-color: #30304D !important;
+            }
+            .el-menu-item.is-active {
+                background-color: rgba(255, 255, 255, .05) !important;
+            }
+        }
+        .el-submenu {
+            .el-submenu__title {
+                font-size: 16px;
+                &:hover {
+                    background-color: #30304D !important;
+                }
+                .el-icon-arrow-down {
+                    font-size: 14px;
+                    color: rgba(255, 255, 255, .6);
+                }
+                span {
+                    padding-left: 15px;
+                }
+            }
+            .el-menu--inline {
+                padding-left: 20px;
+            }
+            .el-menu-item {
+                height: 30px;
+                line-height: 30px;
+                margin: 10px 0;
+                padding: 0 0 0 50px !important;
+                &:hover {
+                    background-color: rgba(255, 255, 255, .05) !important;
+                }
+            }
+        }
+    }
+}
+
+$speed: .8s;
+.animationMenu {
+    animation: menuLeft $speed;
+    -moz-animation: menuLeft $speed; /* Firefox */
+    -webkit-animation: menuLeft $speed; /* Safari 和 Chrome */
+    -o-animation: menuLeft $speed; /* Opera */
+    animation-fill-mode: forwards
+}
+
+@keyframes menuLeft {
+    from {
+        width: 200px;
+    }
+    to {
+        width: 64px;
+    }
+}
+
+@-moz-keyframes menuLeft /* Firefox */
+{
+    from {
+        width: 200px;
+    }
+    to {
+        width: 64px;
+    }
+}
+
+@-webkit-keyframes menuLeft /* Safari 和 Chrome */
+{
+    from {
+        width: 200px;
+    }
+    to {
+        width: 64px;
+    }
+}
+
+@-o-keyframes menuLeft /* Opera */
+{
+    from {
+        width: 200px;
+    }
+    to {
+        width: 64px;
+    }
+}
+
+.animationHeader {
+    justify-content: center !important;
+}
+
+.xk-container {
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    height: calc(100vh - 70px);
+    overflow: auto;
+    background-color: #f3f7fd;
+    padding: 30px;
+    // .container-header{
+    //     height: 48px;
+    //     border-bottom: 1px solid #d3dce6;
+    //     padding: 0 20px;
+    //     background-color: #ffffff;
+    //     font-size: 20px;
+    //     display: none;
+    //     .el-breadcrumb {
+    //         display: inline-block;
+    //         margin-top: 17px;
+    //     }
+    //     .el-breadcrumb .el-breadcrumb__item:last-child {
+    //         .el-breadcrumb__inner{
+    //             color: #000000;
+    //         }
+    //     }
+    // }
+    .container-header {
+        display: none;
+    }
+}
+
+.xk-radius {
+    border-radius: 8px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 0 20px 18px 20px !important;
+    background: #fff;
+}
+
+.xk-search {
+    .el-input__inner {
+        background: rgba(155, 153, 230, 0.14);
+        border: 1px solid #9B99E6;
+        &::placeholder {
+            color: rgba(57, 56, 87, .5);
+        }
+    }
+    .el-range-input {
+        background: transparent;
+        &::placeholder {
+            color: rgba(57, 56, 87, .5);
+        }
+    }
+    .el-form-item {
+        margin-bottom: 8px;
+    }
+    .el-date-editor,.el-select{
+        width: 100%;
+    }
+}
+
+.xk-body {
+
+}
+
+.btn-group {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.marintop20 {
+    margin-top: 20px;
+}
+
+#app {
+    height: 100vh;
+}
+
+.edui-default{
+    z-index: 66 !important;
+}
+
+.el-table th,
+.el-table td {
+    text-align: center;
+}
+.center {
+    text-align: center;
+}
+
+.xk-danger {
+    color: #F56C6C;
+}
+.xk-warning {
+    color: #E6A23C;
+}
+.xk-success {
+    color: #67C23A;
+}
+.xk-primary {
+    color: #9795e3; 
+}
+.xk-red-dot {
+    display: inline-block;
+    position:relative;
+    left: -2px;
+    top: -8px;
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    background-color: red;
+}
+// 修改为链接样式
+.is-url{
+    color:blue;
+    text-decoration:underline;
+    cursor:pointer;
+    &:hover{
+        opacity: 0.7;
+    }
+    &:active{
+        opacity: 0.5
+    }
+}

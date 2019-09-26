@@ -1,0 +1,22 @@
+.xk-often{
+    list-style: none;
+    height: 300px;
+    overflow-y: auto;
+    li{
+        font-size: 14px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #dddddd;
+        cursor: pointer;
+        background:#9795E3;
+        border-radius: 5px;
+        padding: 5px;
+        color: #ffffff;
+        word-break: break-all
+    }
+    li:hover{
+        color: #333333
+    }
+}
+
+
+

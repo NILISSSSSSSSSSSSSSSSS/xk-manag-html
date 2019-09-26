@@ -1,0 +1,77 @@
+$color: #222;
+
+.platform-lottery-detail-info {
+    .el-row{
+        color: $color;
+        padding: 0 10px;
+        .el-col {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #666;
+        }
+    }
+    h3{
+        font-size: 15px;
+        font-weight: bolder;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ccc;
+        .link-detail {
+            float: right;
+            color: #0000FF;
+        }
+    }
+    h4{
+        font-weight: bolder;
+        font-size: 14px;
+        margin-top: 20px;
+        span{
+            text-decoration: underline;
+        }
+    }
+    .h4-item{
+        padding-left: 10px;
+    }
+    .goods-num {
+        padding: 0 20px;
+        &>span{
+            color: #0000FF;
+            font-size: 0.9em;
+        }
+        .el-row{
+            padding: 0 20px;
+        }
+        .img-box {
+            .img-list {
+                display: inline-block;
+                width: 176px;
+                max-height: 176px;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .xk-table {
+        width: 800px;
+        font-size: 14px;
+        color: $color;
+        text-align: center;
+        margin-top: 15px;
+        border: 1px solid $color;
+        .xk-table-title {
+            background: #ccc;
+            border-bottom: 1px solid $color;
+        }
+        .xk-table-content {
+            display: flex;
+            div{
+                padding: 15px 0;
+                flex: 1;
+                &:not(:last-child){
+                    border-right: 1px solid $color;
+                }
+            }
+        }
+    }
+}

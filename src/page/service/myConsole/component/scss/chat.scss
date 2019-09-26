@@ -1,0 +1,492 @@
+.chat{
+    width: 100%;
+    height: 100%;
+    background: #F7F8F9;
+    border-radius: 6px;
+    display: flex;
+    .left-list{
+        flex: 1;
+        max-width: 25%;
+        background: #ffffff;
+        border: 1px solid #f3f3f3;
+        border-radius: 6px 0 0 6px;
+        box-sizing: border-box;
+        .top-search{
+            height: 62px;
+            border-bottom: 1px solid #dddddd;
+            box-sizing: border-box;
+            margin-top: -1px;
+            position: relative;
+            display: none;
+            .demo-input-suffix{
+                width: 86%;
+                height: 40px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+            }
+        }
+        .bottom-user-list{
+            // height: calc(100% - 62px);
+            height: 100%;
+            overflow-y: auto;
+            overflow-x: hidden;
+            width: 100%;
+            .xk-god{
+                width: 100%;
+                height: 85px;
+                position: relative;
+                box-sizing: border-box;
+                display: flex;
+                overflow: hidden;
+                cursor: pointer;
+                .xk-timer{
+                    position: absolute;
+                    top: 15px;
+                    right: 5px;
+                    color: #999999
+                }
+                .xk-new-msg-num{
+                    min-width: 16px;
+                    background: #ff5722;
+                    border-radius: 50%;
+                    position: absolute;
+                    right: 5px;
+                    top: 30px;
+                    z-index: 99;
+                    color: #ffffff;
+                    padding: 2px;
+                    font-size: 12px;
+                    text-align: center
+                }
+                .sanjiao{
+                    position: absolute;
+                    left: 3px;
+                    top: 0;
+                    width: 0;
+                    height: 0;
+                    // border: 10px solid transparent;
+                    border: 10px solid #9795E3;
+                    border-right: 10px solid transparent;
+                    border-bottom: 8px solid transparent;
+                }
+                .avatar-box{
+                    margin: 5px 0 0 10px;
+                    width: 70px;
+                    height: 100%;
+                    position: relative;
+                    box-sizing: border-box;
+                    img{
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        position: absolute;
+                        left: 10px;
+                        top: 10px;
+                    }
+                    .status{
+                        width: 10px;
+                        height: 10px;
+                        background: #999999;
+                        border-radius: 50%;
+                        position: absolute;
+                        left: 10px;
+                        top: 10px;
+                    }
+                    .online{
+                        background: #67c23a;
+                    }
+                }
+                .god-content{
+                    width: calc(100% - 70px);
+                    height: 100%;
+                    box-sizing: border-box;
+                    padding-top: 15px;
+                    position: relative;
+                    font-size: 14px;
+                    .nick{
+                        color: #393857;
+                        width: 50%;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis
+                    }
+                    .txt{
+                        color: #999999;
+                        width: 70%;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        background: none !important;
+                        text-align: left;
+                        position: relative;
+                        padding: 0
+                    }
+                    .xk-remove{
+                        position: absolute;
+                        top: 10px;
+                        right: 15px;
+                        font-size: 26px;
+                        cursor: pointer;
+                        color: #333333;
+                    }
+                }
+            }
+            .chat-select{
+                background: #F1F0FB;
+                box-shadow: inset 3px 0 0 0 #DB4437;
+                // .sanjiao{
+                //     border: 10px solid #9795E3;
+                //     border-right: 10px solid transparent;
+                //     border-bottom: 8px solid transparent;
+                // }
+            }
+        }
+    }
+    .right-content{
+        flex: 3;
+        position: relative;
+        .xk-god-info{
+            width: 100%;
+            height: 62px;
+            background: #ffffff;
+            border: 1px solid #f3f3f3;
+            border-radius: 0 6px 0 0;
+            border-left: 0;
+            box-sizing: border-box;
+            line-height: 60px;
+            display: flex;
+            position: relative;
+            .list{
+                margin-left: 30px;
+                // width: 30%;
+                margin-right: 20px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                font-size: 17px;
+                color: #4C63B7
+            }
+            .star{
+                width: 36px;
+                height: 36px;
+                position: absolute;
+                right: 10px;
+                top: 13px;
+                border-radius: 50%;
+                background: #999999;
+                line-height: 36px;
+                text-align: center;
+                font-size: 14px;
+                color: #ffffff;
+                cursor: pointer;
+            }
+            .star-true{
+                background: #9795E3;
+                color: #ffffff;
+            }
+            // .star-icon{
+            //     position: absolute;
+            //     white-space: nowrap;
+            //     right: 10px;
+            //     top: 5px;
+            //     background: #999999;
+            //     color: #ffffff;
+            //     width: 36px;
+            //     height: 40px;
+            //     line-height: 40px;
+            //     font-size: 12px;
+            //     text-align: center;
+            //     user-select: none;
+            //     cursor: pointer;
+            //     div{
+            //         position: absolute;
+            //         width: 0;
+            //         height: 0;
+            //         border: 9px solid transparent;
+            //         border-top-color: #999999;
+            //         position: absolute;
+            //         bottom: -18px;
+            //     }
+            //     .one{
+            //         left: 0;
+            //     }
+            //     .two{
+            //         right: 0;
+            //     }
+            // }
+            // .star-true{
+            //     background:#9795E3;
+            //     color: #ffcd59;
+            //     div{
+            //         border-top-color: #9795E3;
+            //     }
+            // }
+        }
+        .xk-chat-content{
+            width: 100%;
+            height: calc(100% - 62px);
+            .chat-msg-box{
+                width: 100%;
+                height: 75%;
+                padding: 0 20px;
+                box-sizing: border-box;
+                overflow: hidden;
+                position: relative;
+                .load-txt{
+                    text-align: center;
+                    color: #67c23a;
+                    position: absolute;
+                    left: 50%;
+                    top: 0;
+                    transform: translateX(-50%);
+                    height: 30px;
+                    line-height: 30px;
+                    padding: 0 10px;
+                    border-radius: 15px;
+                    background: #e1f3d8
+                }
+                .xk-time{
+                    width: 60px;
+                    height: 20px;
+                    text-align: center;
+                    line-height: 20px;
+                    border-radius: 10px;
+                    background: #DFDFDF;
+                    color: #ffffff;
+                    margin-left: 50%;
+                    margin-bottom: 10px;
+                    transform: translateX(-50%);
+                    overflow: hidden;
+                }
+                .xk-msg{
+                    // display: flex;
+                    font-size: 14px;
+                    color: #393857;
+                    width: 100%;
+                    margin-bottom: 20px;
+                    float: left;
+                    .xk-avatar{
+                        width: 42px;
+                        min-height: 60px;
+                        float: left;
+                        img{
+                            min-width: 40px;
+                            min-height: 40px;
+                            max-width: 41px;
+                            max-height: 41px;
+                            border-radius: 50%;
+                            margin-left: 50%;
+                            transform: translateX(-50%);
+                            margin-bottom: 5px;
+                            border: 1px solid #dddddd
+                        }
+                        .time{
+                            width: 100%;
+                            text-align: center;
+                            display: none;
+                        }
+                    }
+                    .msg-txt{
+                        float: left;
+                        max-width: 500px;
+                        margin-left: 11px;
+                        .xk-nick{
+                            margin-bottom: 6px;
+                            font-size: 14px;
+                            color: #000000
+                        }
+                        .audio-msg{
+                            position: relative;
+                            user-select: none;
+                            cursor: pointer;
+                            .audio-time{
+                                position: absolute;
+                                right: -35px;
+                                bottom: 0;
+                                display: inline-block;
+                                width: 30px;
+                                text-align: left;
+                                color: #999999;
+                            }
+                        }
+                        .xk-content{
+                            background: #ffffff;
+                            border-radius: 6px;
+                            padding: 8px;
+                            position: relative;
+                            min-height: 20px;
+                            word-wrap:break-word;
+                            color: #393857;
+                            overflow: hidden;
+                            
+                            .xk-order{
+                                cursor: pointer;
+                                img{
+                                    display:block;
+                                    float:left;
+                                    width:100px;
+                                    height:100px;
+                                    border-radius:6px;
+                                }
+                                .xk-detail{
+                                    // height:100px;
+                                    float:left;
+                                    margin-left:5px;
+                                    .xk-name{
+                                        max-width: 375px;
+                                        max-height: 60px;
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+                                        display: -webkit-box;
+                                        -webkit-line-clamp:3;
+                                        -webkit-box-orient: vertical;
+                                    }
+                                    .xk-spec{
+                                        max-width: 375px;
+                                        height: 20px;
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+                                        white-space: nowrap;
+                                        color: #999;
+                                    }
+                                    .xk-price{
+                                        max-width: 375px;
+                                        height: 20px;
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+                                        white-space: nowrap;
+                                        color: #999;
+                                        span{
+                                            color: red
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .self-msg{
+                    // flex-direction: row-reverse;
+                    .xk-avatar{
+                        float: right;
+                    }
+                    .msg-txt{
+                        float: right;
+                        margin-right: 11px;
+                        .xk-nick{
+                            display: none;
+                        }
+                    }
+                }
+                .xk-msg:after{
+                    content: "";
+                    clear: both;
+                }
+            }
+            .chat-input{
+                width: 100%;
+                height: 25%;
+                border-top: 1px solid #f3f3f3;
+                border-right: 1px solid #f3f3f3;
+                box-sizing: border-box;
+                .chat-handle{
+                    height: 40px;
+                    display: flex;
+                    box-sizing: border-box;
+                    padding: 5px 0 0 20px;
+                    background: #ffffff;
+                    .handle-item{
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        // border: 1px solid #999999;
+                        margin-right: 15px;
+                        text-align: center;
+                        line-height: 30px;
+                        cursor: pointer;
+                        user-select: none;
+                        img{
+                            width: 20px;
+                            // margin: -1px;
+                        }
+                    }
+                }
+                .chat-text-input{
+                    height: calc(100% - 43px);
+                    position: relative;
+                    textarea{
+                        width: 100%;
+                        height: 100%;
+                        padding: 10px 100px 0 20px;
+                        font-size: 16px;
+                        box-sizing: border-box;
+                        background: #ffffff;
+                        border: 0;
+                        outline: none;
+                        resize: none;
+                        word-break: break-all
+                    }
+                    .send-btn{
+                        position: absolute;
+                        right: 30px;
+                        bottom: 10px;
+                        .tip{
+                            width: 220px;
+                            position: absolute;
+                            left: -220px;
+                            top: 10px;
+                            font-size: 14px;
+                            color: #dddddd
+                        }
+                    }
+                }
+            }
+        }
+        .no-xk-god{
+            width: 300px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+            color: #999999;
+            img{
+                width: 200px;
+                height: 201px;
+            }
+        }
+    }
+}
+
+
+// 下拉加载
+.content{
+    min-height: calc(100% + 1px);
+    .refresh-box{
+        // margin-bottom: 10px;
+        // height: 30px;
+        // background: red;
+        .not-txt{
+            position: relative;
+            canvas{
+                transform: translateX(-50%);
+                position: absolute;
+                left: 50%;
+                top: -60px;
+                // margin-bottom: 50px
+            }
+            .loading{
+                width: 100%;
+                height: 30px;
+                img{
+                    margin-left: 50%;
+                    transform: translateX(-50%);
+                    height: 30px;
+                }
+            }
+        }
+    }
+    
+}

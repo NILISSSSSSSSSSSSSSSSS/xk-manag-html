@@ -1,0 +1,36 @@
+.missed-record{
+    width: 100%;
+    .add-time{
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        margin-bottom: 20px;
+    }
+}
+$inputHeight:30px;
+.vus-div{
+    display: flex;
+    justify-content: center;
+    line-height: $inputHeight;
+    position: relative;
+    .vus-input{
+        height: $inputHeight;
+        margin-right: 10px;
+        border: 1px solid #999999;
+        outline: none;
+        padding-left: 10px;
+    }
+    .vus-error{
+        border: 1px solid #ff9b9b;
+    }
+    .vus-tips{
+        position: absolute;
+        left: 0;
+        bottom: -30px;
+        text-align: center;
+        width: 100%;
+        box-sizing: border-box;
+        margin-left: -15px;
+        color: #ff9b9b;
+    }
+}

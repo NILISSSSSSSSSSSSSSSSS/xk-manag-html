@@ -1,0 +1,23 @@
+
+.commodity-sales {
+    .pubBackground {
+        background-color: #fff;
+        padding: 0 20px;
+    }
+    .listInfo {
+        line-height: 48px;
+    }
+    .pic-list{
+        height: 80px;
+        overflow: hidden;
+    }
+    .pic-list img {
+        width: 80px;
+        height: auto;
+    }
+    /deep/ .el-form-item__content {
+        /deep/.el-form-item{
+            margin-bottom: 0;
+        }
+    }
+}

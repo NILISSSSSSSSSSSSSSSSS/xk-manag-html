@@ -1,0 +1,26 @@
+$height:60px;
+$chatPadding:20px;
+.training-center{
+    width: 100%;
+    height: 100%;
+    // 训练中心
+    .training-center-main{
+        padding: 30px;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        // 选项
+        @import "./trainingSelect.scss";
+    }
+    /deep/ .el-select {
+        width: 100%;
+    }
+    .no-group{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+}

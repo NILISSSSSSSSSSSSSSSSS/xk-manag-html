@@ -1,0 +1,39 @@
+$vusHeight:12px;
+.vus-range{
+    width: 100%;
+    height: $vusHeight;
+    position: relative;
+    display: flex;
+    
+    .vus-range-input{
+        width: 0;
+        height: 0;
+        opacity: 0;
+        border: 0;
+        outline: none;
+    }
+    .vus-min,
+    .vus-max{
+        padding: 0 5px;
+    }
+    .vus-range-box{
+        flex: 1;
+        border-radius: 2px;
+        position: relative;
+        .vus-already{
+            height: 100%;
+            width: 100px;
+            background: red;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .vus-btn{
+            border-radius: 50%;
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}

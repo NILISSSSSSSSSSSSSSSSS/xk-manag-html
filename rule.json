@@ -1,0 +1,1798 @@
+[
+  {
+    "name": "自营商城",
+    "service": null,
+    "resources": [
+      {
+        "name": "商品管理",
+        "service": null,
+        "resources": [
+          {
+            "name": "自营商城首页",
+            "service": null,
+            "resources": [
+              {
+                "name": "数据统计",
+                "service": ""
+              }
+            ]
+          },
+          {
+            "name": "销售中的商品",
+            "service": "",
+            "resources": [
+              {
+                "name": "查询",
+                "service": "goodsOnSaleQPage"
+              },
+              {
+                "name": "下架",
+                "service": "goodsUnshelve"
+              },
+              {
+                "name": "编辑",
+                "service": "goodsUpdate"
+              },
+              {
+                "name": "自营商城分类",
+                "service": "categoryQueryList"
+              },
+              {
+                "name": "查看评论",
+                "service": ""
+              }
+            ]
+          },
+          {
+            "name": "已下架的商品",
+            "service": "",
+            "resources": [
+              {
+                "name": "查询",
+                "service": "goodsUnshelveQPage"
+              },
+              {
+                "name": "上架",
+                "service": "goodsAdded"
+              },
+              {
+                "name": "自营商城分类",
+                "service": "categoryQueryList"
+              },
+              {
+                "name": "编辑",
+                "service": "goodsUpdate"
+              },
+              {
+                "name": "商品详情",
+                "service": "goodsDetail"
+              },
+              {
+                "name": "查看评论",
+                "service": ""
+              }
+            ]
+          },
+          {
+            "name": "评价管理",
+            "service": "",
+            "resources": [
+              {
+                "name": "查询",
+                "service": "mallGoodsCommentList4Manager"
+              },
+              {
+                "name": "回复评论",
+                "service": "mallGoodsCommentMallReply4Manager"
+              },
+              {
+                "name": "查看详情",
+                "service": "mallGoodsCommentReplyList4Manager"
+              }
+            ]
+          },
+          {
+            "name": "上传商品",
+            "service": "",
+            "resources": [
+              {
+                "name": "新增",
+                "service": "goodsCreate"
+              },
+              {
+                "name": "分类列表",
+                "service": "categoryQueryList"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "订单管理",
+        "service": null,
+        "resources": [
+          {
+            "name": "订单列表",
+            "service": null,
+            "resources": [
+              {
+                "name": "查询",
+                "service": "mallOBMOrderQPage"
+              },
+              {
+                "name": "详情",
+                "service": "mallOrderDetail"
+              },
+              {
+                "name": "运费详情",
+                "service": "mallOrderUpdatePostFeeDetail"
+              },
+              {
+                "name": "修改运费",
+                "service": "mallOrderUpdatePostFee"
+              },
+              {
+                "name": "发货",
+                "service": "mallOrderConfirmShipping"
+              }
+            ]
+          },
+          {
+            "name": "售后订单列表",
+            "service": null,
+            "resources": [
+              {
+                "name": "查询",
+                "service": "mallRefundOrderQPage"
+              },
+              {
+                "name": "详情",
+                "service": "mallOrderDetail"
+              },
+              {
+                "name": "退货审核详情",
+                "service": "mallOrderAuditDetail"
+              },
+              {
+                "name": "退货审核",
+                "service": "mallOrderRefundAccept"
+              },
+              {
+                "name": "确认售后详情",
+                "service": "mallOrderMoneyDetail"
+              },
+              {
+                "name": "确认收货",
+                "service": "mallOrderConfirmReceive"
+              },
+              {
+                "name": "确认退款",
+                "service": "mallOrderConfirmRefund"
+              }
+            ]
+          },
+          {
+            "name": "已关闭的订单",
+            "service": null,
+            "resources": [
+              {
+                "name": "查询",
+                "service": "mallOBMFinishOrderQPage"
+              },
+              {
+                "name": "详情",
+                "service": "mallOrderDetail"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "商城设置",
+        "service": null,
+        "resources": [
+          {
+            "name": "基本信息",
+            "service": null,
+            "resources": [
+              {
+                "name": "查询商城信息",
+                "service": "mallInfoDetail"
+              },
+              {
+                "name": "修改商城信息",
+                "service": "mallInfoSetting"
+              }
+            ]
+          },
+          {
+            "name": "运费模板",
+            "service": null,
+            "resources": [
+              {
+                "name": "查询",
+                "service": "postfeeQPage"
+              },
+              {
+                "name": "新增",
+                "service": "postfeeCreate"
+              },
+              {
+                "name": "运费详情",
+                "service": "postfeeDetail"
+              },
+              {
+                "name": "编辑",
+                "service": "postfeeUpdate"
+              },
+              {
+                "name": "删除",
+                "service": "postfeeDelete"
+              }
+            ]
+          },
+          {
+            "name": "发票管理",
+            "service": null,
+            "resources": [
+              {
+                "name": "查询",
+                "service": "invoiceQPage"
+              },
+              {
+                "name": "发票详情",
+                "service": "invoiceDetail"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "夺奖派对",
+    "service": null,
+    "resources": [
+      {
+        "name": "奖品池",
+        "service": null,
+        "resources": [
+          {
+            "name": "控制台",
+            "service": null,
+            "resources": [
+              {
+                "name": "统计",
+                "service": ""
+              }
+            ]
+          },
+          {
+            "name": "添加奖品",
+            "service": null,
+            "resources": [
+              {
+                "name": "新增福利奖品",
+                "service": "jfmallGoodsCreate4Manager"
+              },
+              {
+                "name": "自营商城奖品列表",
+                "service": "xkGoodsQPage"
+              },
+              {
+                "name": "编辑",
+                "service": "jfmallGoodsUpdate4Manager"
+              },
+              {
+                "name": "夺奖派对奖品详情",
+                "service": "jfmallGoodsDetail4Manager"
+              },
+              {
+                "name": "自营商城奖品详情",
+                "service": "xkGoodsDetail"
+              }
+            ]
+          },
+          {
+            "name": "三方奖品列表",
+            "service": null,
+            "resources": [
+              {
+                "name": "查询",
+                "service": "shopJGoodsQPage4Manager"
+              },
+              {
+                "name": "奖品详情",
+                "service": "jfmallGoodsDetail4Manager"
+              },
+              {
+                "name": "审核",
+                "service": "auditShopJGoods4Manager"
+              },
+              {
+                "name": "下架",
+                "service": "jSequencePauseNext"
+              }
+            ]
+          },
+          {
+            "name": "自营奖品列表",
+            "service": null,
+            "resources": [
+              {
+                "name": "查询",
+                "service": "jfmallGoodsQPage4Manager"
+              },
+              {
+                "name": "奖品详情",
+                "service": "jfmallGoodsDetail4Manager"
+              },
+              {
+                "name": "设置开奖方式",
+                "service": "jSequenceCreate"
+              },
+              {
+                "name": "编辑奖品",
+                "service": "jfmallGoodsUpdate4Manager"
+              },
+              {
+                "name": "删除奖品",
+                "service": "jfmallGoodsDelete4Manager"
+              },
+              {
+                "name": "下一期暂停",
+                "service": "jSequencePauseNext"
+              }
+            ]
+          },
+          {
+            "name": "自营奖品特殊奖品列表",
+            "service": null,
+            "resources": []
+          }
+        ]
+      },
+      {
+        "name": "福利订单",
+        "service": null,
+        "resources": [
+          {
+            "name": "订单列表",
+            "service": null,
+            "resources": [
+              {
+                "name": "查询",
+                "service": "jMallOBMOrderQPage"
+              },
+              {
+                "name": "订单详情",
+                "service": "jMallOBMOrderDetail"
+              }
+            ]
+          },
+          {
+            "name": "期列表",
+            "service": null,
+            "resources": [
+              {
+                "name": "查询",
+                "service": "jSequenceQPage"
+              },
+              {
+                "name": "查看期详情",
+                "service": "jSequenceDetailById"
+              },
+              {
+                "name": "手动开奖",
+                "service": "jManualWork"
+              }
+            ]
+          },
+          {
+            "name": "AA彩票领取列表",
+            "service": null,
+            "resources": [
+            ]
+          },
+          {
+            "name": "AA彩票兑奖列表",
+            "service": null,
+            "resources": [
+            ]
+          },
+          {
+            "name": "随机红包中奖列表",
+            "service": null,
+            "resources": [
+            ]
+          },
+          {
+            "name": "福利大奖中奖列表",
+            "service": null,
+            "resources": [
+            ]
+          },
+          {
+            "name": "售后列表",
+            "service": null,
+            "resources": [
+            ]
+          }
+        ]
+      },
+      {
+        "name": "晒单管理",
+        "service": null,
+        "resources": [
+          {
+            "name": "晒单列表",
+            "service": null,
+            "resources": [
+              {
+                "name": "查询",
+                "service": "jGoodsCommentList4Manager"
+              },
+              {
+                "name": "晒单详情",
+                "service": "jGoodsCommentDetail4Manager"
+              },
+              {
+                "name": "删除晒单",
+                "service": "jGoodsCommentDelete4Manager"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "运营管理",
+    "service": null,
+    "resources": [
+      {
+        "name": "用户管理",
+        "service": null,
+        "resources": [
+          {
+            "name": "会员列表",
+            "service": null,
+            "resources": [
+              {
+                "name": "查询",
+                "service": "xkUserPage"
+              },
+              {
+                "name": "会员基本信息",
+                "service": "xkUserDetail"
+              },
+              {
+                "name": "删除会员信息",
+                "service": "xkUserDelete"
+              },
+              {
+                "name": "会员订单记录",
+                "service": ""
+              },
+              {
+                "name": "会员浏览记录",
+                "service": ""
+              }
+            ]
+          },
+          {
+            "name": "会员实名认证",
+            "service": null,
+            "resources": [
+              {
+                "name": "查询",
+                "service": "xkUserAuthPage"
+              },
+              {
+                "name": "删除",
+                "service": "xkUserAuthBatchDelete"
+              },
+              {
+                "name": "查看会员信息",
+                "service": "xkUserAuthDetail"
+              },
+              {
+                "name": "审核",
+                "service": "xkUserAuthAccept"
+              }
+            ]
+          },
+          {
+            "name": "商户列表",
+            "service": null,
+            "resources": [
+              {
+                "name": "查询",
+                "service": "merchantList"
+              },
+              {
+                "name": "查看商户详情",
+                "service": "merchantDetail"
+              },
+              {
+                "name": "查看店铺列表",
+                "service": "mShopQPage"
+              },
+              {
+                "name": "查看店铺详情",
+                "service": "mShopDetail"
+              },
+              {
+                "name": "查看店铺内的商品",
+                "service": ""
+              },
+              {
+                "name": "冻结商户",
+                "service": "merchantDisabled"
+              },
+              {
+                "name": "下架店铺",
+                "service": "mShopDisable"
+              }
+            ]
+          },
+          {
+            "name": "商户审核",
+            "service": null,
+            "resources": [
+              {
+                "name": "商户待审核列表",
+                "service": "merchantQPage"
+              },
+              {
+                "name": "待审核数量(商户/店铺)",
+                "service": "NotAuthNum"
+              },
+              {
+                "name": "店铺待审核列表",
+                "service": "mShopAuthQPage"
+              },
+              {
+                "name": "查看商户详情",
+                "service": "mAuthDetail"
+              },
+              {
+                "name": "审核商户",
+                "service": "merchantFirstAuth"
+              },
+              {
+                "name": "查看店铺详情",
+                "service": "mShopDetail"
+              },
+              {
+                "name": "审核店铺",
+                "service": "mShopAuth"
+              }
+            ]
+          },
+          {
+            "name": "用户组管理",
+            "service": null,
+            "resources": [
+              {
+                "name": "查询",
+                "service": "xkUserGroupPage"
+              },
+              {
+                "name": "查询会员列表",
+                "service": "xkUserPage"
+              },
+              {
+                "name": "新增用户组",
+                "service": "xkUserGroupCreate"
+              },
+              {
+                "name": "查看用户组详情",
+                "service": "xkUserGroupMemberQPage"
+              },
+              {
+                "name": "编辑用户组",
+                "service": "xkUserGroupUpdate"
+              },
+              {
+                "name": "删除用户组",
+                "service": "xkUserGroupDelete"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "商品管理",
+        "service": null,
+        "resources": [
+          {
+            "name": "已审核商品",
+            "service": null,
+            "resources": [
+              {
+                "name": "查询",
+                "service": "shopGoodsDBOVerifiedQPage"
+              },
+              {
+                "name": "查看商品分类",
+                "service": "serviceCatalogList"
+              },
+              {
+                "name": "下架",
+                "service": "shopDBOGoodsUnshelve"
+              },
+              {
+                "name": "商品详情",
+                "service": "shopDBOGoodsDetail"
+              }
+            ]
+          },
+          {
+            "name": "待审核商品",
+            "service": null,
+            "resources": [
+              {
+                "name": "查询",
+                "service": "shopGoodsDBOUnauditedQPage"
+              },
+              {
+                "name": "查看商品分类",
+                "service": "serviceCatalogList"
+              },
+              {
+                "name": "下架",
+                "service": "shopDBOGoodsUnshelve"
+              },
+              {
+                "name": "审核",
+                "service": "shopDBOGoodsUpdateByAudit"
+              },
+              {
+                "name": "商品详情",
+                "service": "shopDBOGoodsDetail"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "分类管理",
+        "service": null,
+        "resources": [
+          {
+            "name": "夺奖派对分类管理",
+            "service": null,
+            "resources": [
+              {
+                "name": "查询",
+                "service": "queryJFCategory"
+              },
+              {
+                "name": "新增",
+                "service": "createJFCategory"
+              },
+              {
+                "name": "编辑",
+                "service": "updateJFCategory"
+              },
+              {
+                "name": "删除",
+                "service": "deleteJFCategory"
+              },
+              {
+                "name": "排序",
+                "service": "jfCategoryUpdateSort"
+              }
+            ]
+          },
+          {
+            "name": "自营商城分类管理",
+            "service": null,
+            "resources": [
+              {
+                "name": "查询",
+                "service": "categoryQueryList"
+              },
+              {
+                "name": "新增",
+                "service": "categoryCreate"
+              },
+              {
+                "name": "编辑",
+                "service": "categoryUpdate"
+              },
+              {
+                "name": "删除",
+                "service": "categoryDelete"
+              },
+              {
+                "name": "排序",
+                "service": "categoryUpdateSort"
+              }
+            ]
+          },
+          {
+            "name": "自营商城品牌",
+            "service": null,
+            "resources": [
+              {
+                "name": "查询",
+                "service": "queryAll"
+              },
+              {
+                "name": "新增",
+                "service": "brandCreate"
+              },
+              {
+                "name": "编辑",
+                "service": "brandUpdate"
+              },
+              {
+                "name": "删除",
+                "service": "brandDelete"
+              }
+            ]
+          },
+          {
+            "name": "店铺行业分类",
+            "service": null,
+            "resources": [
+              {
+                "name": "查询",
+                "service": "industryAllQList"
+              },
+              {
+                "name": "新增",
+                "service": "industryOneCreate"
+              },
+              {
+                "name": "添加二级分类",
+                "service": "industryTwoCreate"
+              },
+              {
+                "name": "编辑",
+                "service": "industryUpdate"
+              },
+              {
+                "name": "删除",
+                "service": "industryDelete"
+              },
+              {
+                "name": "排序",
+                "service": "industryUpdateSort"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "平台监管",
+        "service": null,
+        "resources": [
+          {
+            "name": "意见反馈投诉",
+            "service": null,
+            "resources": [
+              {
+                "name": "个人投诉查询",
+                "service": "personalFeedbackPage"
+              },
+              {
+                "name": "个人投诉信息详情",
+                "service": "personalFeedbackDetail"
+              },
+              {
+                "name": "删除个人投诉信息",
+                "service": "personalFeedbackDelete"
+              },
+              {
+                "name": "商品投诉查询",
+                "service": "goodsFeedbackPage"
+              },
+              {
+                "name": "商品投诉详情",
+                "service": "goodsFeedbackDetail"
+              },
+              {
+                "name": "删除商品投诉",
+                "service": "goodsFeedbackDelete"
+              }
+            ]
+          },
+          {
+            "name": "用户IM监管",
+            "service": null,
+            "resources": []
+          }
+        ]
+      },
+      {
+        "name": "广告推送管理",
+        "service": null,
+        "resources": [
+          {
+            "name": "推荐商品管理",
+            "service": null,
+            "resources": [
+              {
+                "name": "福利商品查询",
+                "service": "jfmallRecommendJGoodsQPage4Manager"
+              },
+              {
+                "name": "新增福利商品",
+                "service": ""
+              },
+              {
+                "name": "删除福利商品",
+                "service": ""
+              },
+              {
+                "name": "新增福利商品",
+                "service": "mallCreateRecommendSGoods"
+              },
+              {
+                "name": "删除福利商品",
+                "service": "mallDeleteRecommendSGoodsByIds"
+              }
+            ]
+          },
+          {
+            "name": "推荐商户管理",
+            "service": null,
+            "resources": [
+              {
+                "name": "推荐店铺列表",
+                "service": "mShopRecommendShopQPage"
+              },
+              {
+                "name": "查看店铺详情",
+                "service": "mShopDetail"
+              },
+              {
+                "name": "新增推荐店铺",
+                "service": "mShopRecommend"
+              },
+              {
+                "name": "删除推荐店铺",
+                "service": "mShopUnRecommend"
+              }
+            ]
+          },
+          {
+            "name": "首页banner管理",
+            "service": null,
+            "resources": [
+              {
+                "name": "banner列表",
+                "service": "bannerPage"
+              },
+              {
+                "name": "新增banner",
+                "service": "bannerCreate"
+              },
+              {
+                "name": "编辑banner",
+                "service": "bannerUpdate"
+              },
+              {
+                "name": "删除banner",
+                "service": "bannerDelete"
+              },
+              {
+                "name": "停用banner",
+                "service": "bannerDisabled"
+              },
+              {
+                "name": "启用banner",
+                "service": "bannerEnabled"
+              }
+            ]
+          },
+          {
+            "name": "推送内容管理",
+            "service": null,
+            "resources": []
+          },
+          {
+            "name": "推广模板管理",
+            "service": null,
+            "resources": [
+              {
+                "name": "查询",
+                "service": "promotionTemplateQPage"
+              },
+              {
+                "name": "关联商品",
+                "service": "goodsOnSaleQPage"
+              },
+              {
+                "name": "新增模板",
+                "service": "promotionTemplateCreate"
+              },
+              {
+                "name": "模板详情",
+                "service": "promotionTemplateDetail"
+              },
+              {
+                "name": "编辑模板",
+                "service": "promotionTemplateUpdate"
+              },
+              {
+                "name": "删除模板",
+                "service": "promotionTemplateDelete"
+              }
+            ]
+          },
+          {
+            "name": "热门资讯管理",
+            "service": null,
+            "resources": [
+              {
+                "name": "查询资讯列表",
+                "service": "consultContentPage"
+              },
+              {
+                "name": "查询活动类型",
+                "service": "activityTypePage"
+              },
+              {
+                "name": "查询用户组",
+                "service": "xkUserGroupPage"
+              },
+              {
+                "name": "新增资讯",
+                "service": "consultContentCreate"
+              },
+              {
+                "name": "资讯详情",
+                "service": "consultContentDetail"
+              },
+              {
+                "name": "编辑模板",
+                "service": "consultContentUpdate"
+              },
+              {
+                "name": "删除模板",
+                "service": "consultContentDelete"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "卡券管理",
+        "service": null,
+        "resources": [
+          {
+            "name": "自营商城优惠券",
+            "service": null,
+            "resources": [
+              {
+                "name": "优惠券列表",
+                "service": "cardCouponQPage"
+              },
+              {
+                "name": "自营商城分类列表",
+                "service": "categoryQueryList"
+              },
+              {
+                "name": "优惠券详情",
+                "service": "cardCouponDetail"
+              },
+              {
+                "name": "领券用户",
+                "service": "shopOBMQPageCoupon"
+              },
+              {
+                "name": "平台优惠券品类列表",
+                "service": "cardCouponQListSGoodsCode"
+              },
+              {
+                "name": "新增优惠券",
+                "service": "cardCouponCreate"
+              },
+              {
+                "name": "作废",
+                "service": "cardCouponDelete"
+              }
+            ]
+          },
+          {
+            "name": "商圈店铺优惠券",
+            "service": null,
+            "resources": [
+              {
+                "name": "优惠券列表",
+                "service": "shopCardCouponQPage"
+              },
+              {
+                "name": "商圈店铺分类列表",
+                "service": "industryAllQList"
+              },
+              {
+                "name": "商圈优惠券详情",
+                "service": "shopCouponDetail"
+              },
+              {
+                "name": "领券用户",
+                "service": "shopOBMQPageCoupon"
+              },
+              {
+                "name": "作废",
+                "service": "shopCouponDelete"
+              }
+            ]
+          },
+          {
+            "name": "自营商城会员卡管理",
+            "service": null,
+            "resources": [
+              {
+                "name": "自营商城会员卡列表",
+                "service": "cardMemberCardQPage"
+              },
+              {
+                "name": "新增自营商城会员卡",
+                "service": "cardMemberCardCreate"
+              },
+              {
+                "name": "自营商城会员卡作废",
+                "service": "cardMemberCardDelete"
+              },
+              {
+                "name": "自营商城会员卡详情",
+                "service": "cardMemberCardDetail"
+              },
+              {
+                "name": "自营商城领卡用户详情",
+                "service": "shopOBMQPageMember"
+              }
+            ]
+          },
+          {
+            "name": "商圈店铺会员卡管理",
+            "service": null,
+            "resources": [
+              {
+                "name": "商圈店铺会员卡列表",
+                "service": "shopMemberCardQPage"
+              },
+              {
+                "name": "商圈店铺会员卡作废",
+                "service": "shopMemberCardDelete"
+              },
+              {
+                "name": "商圈店铺会员卡详情",
+                "service": "shopMemberCardDetail"
+              },
+              {
+                "name": "商圈店铺领卡用户详情",
+                "service": "shopOBMQPageMember"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "平台设置",
+        "service": null,
+        "resources": [
+          {
+            "name": "商城设置",
+            "service": null,
+            "resources": [
+              {
+                "name": "保存热搜关键字",
+                "service": "settingHotWord"
+              },
+              {
+                "name": "保存热门城市",
+                "service": "hotRegionSetting"
+              },
+              {
+                "name": "保存自动设置",
+                "service": "settingAutoConfig"
+              },
+              {
+                "name": "保存销售奖励设置",
+                "service": "settingSalesReward"
+              },
+              {
+                "name": "获取热搜关键字",
+                "service": "hotWordDetail"
+              },
+              {
+                "name": "获取热门城市",
+                "service": "hotRegionPage"
+              },
+              {
+                "name": "获取自动配置",
+                "service": "autoConfigDetail"
+              },
+              {
+                "name": "获取销售奖励设置",
+                "service": "salesRewardDetail"
+              }
+            ]
+          },
+          {
+            "name": "商户高级设置",
+            "service": null,
+            "resources": [
+              {
+                "name": "查询商户免审白名单",
+                "service": "merchantWhiteListQPage"
+              },
+              {
+                "name": "新增商户白名单",
+                "service": "merchantWhiteListCreate"
+              },
+              {
+                "name": "查询商户",
+                "service": "merchantQList"
+              },
+              {
+                "name": "删除白名单商户",
+                "service": "merchantWhiteListDelete"
+              }
+            ]
+          },
+          {
+            "name": "平台协议设置",
+            "service": null,
+            "resources": [
+              {
+                "name": "查看协议",
+                "service": "platformPtotocolConfigDetail"
+              },
+              {
+                "name": "编辑协议",
+                "service": "settingPlatformProtocolConfig"
+              }
+            ]
+          },
+          {
+            "name": "用户等级设置",
+            "service": null,
+            "resources": [
+              {
+                "name": "查询用户等级",
+                "service": "xkUserLevelPage"
+              },
+              {
+                "name": "用户等级详情",
+                "service": "xkUserLevelDetail"
+              },
+              {
+                "name": "新增用户等级",
+                "service": "xkUserLevelCreate"
+              },
+              {
+                "name": "编辑用户等级",
+                "service": "xkUserLevelUpdate"
+              },
+              {
+                "name": "积分设置详情",
+                "service": "xkUserLevelRuleList"
+              },
+              {
+                "name": "编辑积分设置",
+                "service": "xkUserLevelRuleSave"
+              }
+            ]
+          },
+          {
+            "name": "首页ICON管理",
+            "service": null,
+            "resources": [
+              {
+                "name": "广场首页ICON管理",
+                "service": "homeIconQList"
+              },
+              {
+                "name": "夺奖派对首页ICON管理",
+                "service": "jcategoryQList"
+              },
+              {
+                "name": "自营商城ICON管理",
+                "service": "scategoryQList"
+              },
+              {
+                "name": "商圈首页ICON编辑",
+                "service": "industryQList"
+              },
+              {
+                "name": "广场首页ICON编辑",
+                "service": "homeIconUpdate"
+              },
+              {
+                "name": "夺奖派对首页ICON编辑",
+                "service": "jcategoryUpdate"
+              },
+              {
+                "name": "自营商城ICON编辑",
+                "service": "scategoryUpdate"
+              },
+              {
+                "name": "商圈首页ICON编辑",
+                "service": "industryIconUpdate"
+              },
+              {
+                "name": "广场首页ICON允许移动",
+                "service": "homeIconIsMove"
+              },
+              {
+                "name": "夺奖派对首页ICON允许移动",
+                "service": "jcategoryIsMove"
+              },
+              {
+                "name": "自营商城ICON允许移动",
+                "service": "scategoryIsMove"
+              },
+              {
+                "name": "商圈首页ICON允许移动",
+                "service": "industryIsMove"
+              },
+              {
+                "name": "商圈首页ICON编辑",
+                "service": "industryIconUpdate"
+              },
+              {
+                "name": "广场首页ICON不允许移动",
+                "service": "homeIconNotMove"
+              },
+              {
+                "name": "夺奖派对首页ICON不允许移动",
+                "service": "jcategoryNotMove"
+              },
+              {
+                "name": "自营商城ICON不允许移动",
+                "service": "scategoryNotMove"
+              },
+              {
+                "name": "商圈首页ICON不允许移动",
+                "service": "industryNotMove"
+              }
+            ]
+          },
+          {
+            "name": "消费抽奖设置",
+            "service": null,
+            "resources": []
+          },
+          {
+            "name": "游戏管理",
+            "service": null,
+            "resources": []
+          }
+        ]
+      },
+      {
+        "name": "城市发展管理",
+        "service": null,
+        "resources": [
+          {
+            "name": "城市交易管理",
+            "service": null,
+            "resources": [
+              {
+                "name": "城市交易管理列表",
+                "service": "cityTradePage"
+              },
+              {
+                "name": "开启订单交易",
+                "service": "cityTradeOrderEnabled"
+              },
+              {
+                "name": "关闭订单交易",
+                "service": "cityTradeOrderDisabled"
+              },
+              {
+                "name": "开启外卖",
+                "service": "cityTradeTakeoutEnabled"
+              },
+              {
+                "name": "关闭外卖",
+                "service": "cityTradeTakeoutDisabled"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "短信模板管理",
+        "service": null,
+        "resources": [
+          {
+            "name": "短信渠道",
+            "service": null,
+            "resources": [
+              {
+                "name": "查询",
+                "service": "smsChannelPage"
+              },
+              {
+                "name": "渠道详情",
+                "service": "smsChannelDetail"
+              },
+              {
+                "name": "修改渠道",
+                "service": "smsChannelUpdate"
+              },
+              {
+                "name": "新增渠道",
+                "service": "smsChannelCreate"
+              },
+              {
+                "name": "启用渠道",
+                "service": "smsChannelEnabled"
+              },
+              {
+                "name": "禁用渠道",
+                "service": "smsChannelDisabled"
+              }
+            ]
+          },
+          {
+            "name": "短信模板",
+            "service": null,
+            "resources": [
+              {
+                "name": "查询",
+                "service": "smsTemplateConfigPage"
+              },
+              {
+                "name": "新增模板",
+                "service": "smsTemplateConfigCreate"
+              },
+              {
+                "name": "模板详情",
+                "service": "smsTemplateConfigDetail"
+              },
+              {
+              "name": "修改模板",
+              "service": "smsTemplateConfigUpdate"
+              },
+              {
+                "name": "删除模板",
+                "service": "smsTemplateConfigBatchDelete"
+              },
+              {
+                "name": "获取短信渠道",
+                "service": "smsChannelPage"
+              }
+            ]
+          }
+        ]
+
+      }
+    ]
+  },
+  {
+    "name": "客服",
+    "service": null,
+    "resources": [
+      {
+        "name": "任务中心",
+        "service": null,
+        "resources": [
+          {
+            "name": "公告任务大厅",
+            "service": null,
+            "resources": [
+              {
+                "name": "公告任务大厅列表",
+                "service": "xkCustomerServiceTaskList"
+              },
+              {
+                "name": "接单",
+                "service": "xkCustomerServiceReceipt"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "我的工作台",
+        "service": null,
+        "resources": [
+          {
+            "name": "受理中",
+            "service": null,
+            "resources": [
+              {
+                "name": "快捷回复内容列表",
+                "service": "csQuickReplyQPage"
+              },
+              {
+                "name": "知识库列表",
+                "service": "knowledgePointList"
+              },
+              {
+                "name": "工单流转",
+                "service": "workOrderPageTakeOver"
+              },
+              {
+                "name": "工单流转-列表",
+                "service": "workOrderPageTakeOver"
+              },
+              {
+                "name": "客服未完成任务列表",
+                "service": "xkCustomerServiceNotFinishList"
+              },
+              {
+                "name": "知识库列表",
+                "service": "knowledgePointList"
+              }
+            ]
+          },
+          {
+            "name": "星标任务",
+            "service": null,
+            "resources": [
+              {
+                "name": "快捷回复内容列表",
+                "service": "csQuickReplyQPage"
+              },
+              {
+                "name": "知识库列表",
+                "service": "knowledgePointList"
+              },
+              {
+                "name": "客服未完成任务列表",
+                "service": "xkCustomerServiceNotFinishList"
+              }
+            ]
+          },
+          {
+            "name": "已完成工单",
+            "service": null,
+            "resources": [
+              {
+                "name": "工单列表",
+                "service": "workOrderPageComplete"
+              },
+              {
+                "name": "工单详情",
+                "service": "workOrderDetail"
+              },
+              {
+                "name": "工单消息记录",
+                "service": "workOrderMsgRecordsList"
+              }
+            ]
+          },
+          {
+            "name": "工单流转",
+            "service": null,
+            "resources": [
+              {
+                "name": "工单列表",
+                "service": "workOrderPageTakeOver"
+              },
+              {
+                "name": "工单详情",
+                "service": "workOrderDetail"
+              },
+              {
+                "name": "工单消息记录",
+                "service": "workOrderMsgRecordsList"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "客服设置",
+        "service": null,
+        "resources": [
+          {
+            "name": "知识库",
+            "service": null,
+            "resources": [
+              {
+                "name": "问题列表",
+                "service": "questionQList"
+              },
+              {
+                "name": "知识库列表",
+                "service": "knowledgePointList"
+              },
+              {
+                "name": "分类列表",
+                "service": "categoryManagerList"
+              }
+            ]
+          },
+          {
+            "name": "回复设置",
+            "service": null,
+            "resources": [
+              {
+                "name": "快捷回复列表",
+                "service": "csQuickReplyQPage"
+              },
+              {
+                "name": "自动回复",
+                "service": "csSetReplyDetail"
+              },
+              {
+                "name": "离线回复",
+                "service": "csSetReplyDetail"
+              },
+              {
+                "name": "人数设置",
+                "service": "csSetReplyDetail"
+              },
+              {
+                "name": "个人资料详情",
+                "service": "csCustomerDetail"
+              },
+              {
+                "name": "个人资料修改",
+                "service": "csCustomerUpdate"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "客服管理日志",
+        "service": null,
+        "resources": [
+          {
+            "name": "客服登录日志",
+            "service": null,
+            "resources": [
+              {
+                "name": "查询",
+                "service": "csLoginLogQPage"
+              }
+            ]
+          },
+          {
+            "name": "坐席在线状态",
+            "service": null,
+            "resources": [
+              {
+                "name": "查询",
+                "service": "csWorkStatusQPage"
+              }
+            ]
+          },
+          {
+            "name": "业务错过记录",
+            "service": null,
+            "resources": [
+              {
+                "name": "查询",
+                "service": "expireLog"
+              },
+              {
+                "name": "查看过期时间",
+                "service": "expireTimeDetail"
+              },
+              {
+                "name": "设置过期时间",
+                "service": "expireTimeSetting"
+              }
+            ]
+          },
+          {
+            "name": "近一周工作量趋势",
+            "service": null,
+            "resources": [
+              {
+                "name": "查询",
+                "service": "workOrderStatistics"
+              }
+            ]
+          },
+          {
+            "name": "投诉客服记录",
+            "service": null,
+            "resources": [
+              {
+                "name": "查询",
+                "service": "complaintPage"
+              },{
+                "name": "工单详情",
+                "service": "workOrderDetail"
+              },
+              {
+                "name": "查询工单消息记录",
+                "service": "workOrderMsgRecordsList"
+              }
+            ]
+          },
+          {
+            "name": "投诉客服记录",
+            "service": null,
+            "resources": [
+              {
+                "name": "查询",
+                "service": "workOrderPage"
+              },{
+                "name": "工单详情",
+                "service": "workOrderDetail"
+              },
+              {
+                "name": "查询工单消息记录",
+                "service": "workOrderMsgRecordsList"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "地区运营群管理",
+        "service": null,
+        "resources": [
+          {
+            "name": "群列表",
+            "service": null,
+            "resources": [
+              {
+                "name": "查询",
+                "service": "teamList"
+              },
+              {
+                "name": "新建运营群",
+                "service": "trainTeamCreate"
+              },
+              {
+                "name": "查询当前登录用户是否在群内",
+                "service": "userTeamAuth"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"聊天",
+        "service":null,
+        "resources":[
+          {
+            "name":"查询官方群信息",
+            "service":"teamInfo"
+          },
+          {
+            "name":"禁言群成员",
+            "service":"teamUserMute"
+          },
+          {
+            "name":"禁言整个群",
+            "service":"muteAll"
+          },
+          {
+            "name":"上传群文件",
+            "service":"teamFileUpload"
+          },
+          {
+            "name":"群文件列表",
+            "service":"teamFileList"
+          },
+          {
+            "name":"批量修改群管理员",
+            "service":"betachUpdateTeamManager"
+          },
+          {
+            "name":"更换群主",
+            "service":"changeTeamOwner"
+          },
+          {
+            "name":"解散群",
+            "service":"teamRemove1"
+          },
+          {
+            "name":"培训群历史聊天记录查询",
+            "service":"teamMsgRecordPage"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "直播",
+    "service": null,
+    "resources": [
+      {
+        "name": "家族审核",
+        "service": null,
+        "resources": [
+          {
+            "name": "普通家族审核",
+            "service": null
+          },
+          {
+            "name": "钻石家族审核",
+            "service": null
+          }
+        ]
+      },
+      {
+        "name": "关注",
+        "service": null,
+        "resources": [
+          {
+            "name": "推荐用户列表",
+            "service": null,
+            "resources": [
+              {
+                "name": "查询推荐用户",
+                "service": "xkUserRecommendPage"
+              },
+              {
+                "name": "删除推荐用户",
+                "service": "xkUserRecommendDelete"
+              },
+              {
+                "name": "新增推荐用户",
+                "service": "xkUserRecommendCreate"
+              },
+              {
+                "name": "查询用户",
+                "service": "xkUserPageSearch"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "礼物管理",
+        "service": null,
+        "resources": [
+          {
+            "name": "所有礼物",
+            "service": null,
+            "resources": [
+              {
+                "name": "所有礼物",
+                "service": null,
+                "resources": [
+                  {
+                    "name": "查询礼物",
+                    "service": "giftPage"
+                  },
+                  {
+                    "name": "礼物详情",
+                    "service": "giftDetail"
+                  },
+                  {
+                    "name": "新增礼物",
+                    "service": "giftCreate"
+                  },
+                  {
+                    "name": "修改礼物",
+                    "service": "giftUpdate"
+                  },
+                  {
+                    "name": "删除礼物",
+                    "service": "giftDelete"
+                  },
+                  {
+                    "name": "启用礼物",
+                    "service": "giftEnable"
+                  },
+                  {
+                    "name": "禁用礼物",
+                    "service": "giftDisable"
+                  },
+                  {
+                    "name": "上小时排行设置详情",
+                    "service": "lastHourRankingDetail"
+                  },
+                  {
+                    "name": "上小时排行设置修改",
+                    "service": "lastHourRankingSetting"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

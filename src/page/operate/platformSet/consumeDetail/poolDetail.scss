@@ -1,0 +1,19 @@
+.pool-detail {
+    h4{
+        font-weight: bolder;
+        font-size: 15px;
+        &::after {
+            content: "";
+            display: block;
+            height: 1px;
+            background-color:#ddd;
+            margin-top: 10px;
+        }
+        .fr {
+            float: right;
+        }
+    }
+    .recharge-box {
+        padding:10px 10px 20px 24px;
+    }
+}

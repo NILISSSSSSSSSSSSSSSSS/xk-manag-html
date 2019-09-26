@@ -1,0 +1,116 @@
+
+.board {
+    .el-table th {
+        background: #fff;
+        color: #000
+    }
+    .xk-type {
+        margin-top: 14px;
+        /deep/ .el-button {
+            color: #303133;
+        }
+        .xk-primary{
+            color: #9795e3;
+        }
+    }
+    .board-top {
+        border-radius: 8px;
+        padding-bottom: 15px;
+        background-color: #ffffff;
+        box-shadow: 0 0 20px 1px rgba(86,62,157,0.06);
+        h4 {
+            font-size: 22px;
+            padding: 20px 20px 5px;
+            color: #fff;
+            border-bottom: inherit
+        }
+        .el-row-title {
+            font-size: 17px;
+            font-weight: 600;
+            color:  #393857;;
+            padding-bottom: 16px;
+            p:last-child {
+                font-family: Impact;
+                color: #9B99E6;
+                font-size: 28px;
+                font-weight: bolder;
+                margin-top: 10px;
+                b{
+                    font-weight: inherit;
+                }
+            }
+            .el-col {
+                position: relative;
+                &:after{
+                    position: absolute;
+                    content: " ";
+                    width: 1px;
+                    height: 50px;
+                    background-color: #393857;
+                    opacity: .1;
+                    right: 1px;
+                    top: 50%;
+                    z-index: 100;
+                    transform: translateY(-40%);
+                }
+            }
+            .el-col:last-child:after {
+                content: '';
+                width: 0;
+            }
+        }
+        .el-row {
+            text-align: center
+        }
+        .el-col {
+            padding: 10px 0 0
+        }
+    }
+    .board-content {
+        margin-top: 20px;
+        .xk-title .vus-title{
+            margin-bottom: 0;
+        }
+        .board-content-title {
+            // font-size: 20px;
+            padding: 0 15px;
+        }
+        .el-col {
+            padding-right: 40px;
+            box-sizing: border-box;
+            .el-con {
+                background-color: #ffffff;
+                overflow: hidden;
+                border-radius: 8px;
+                box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+                height: 390px;
+                .el-form-item {
+                    margin-bottom: 0;
+                }
+                .el-table::before {
+                    width: 0;
+                }
+                .el-table__row:last-child td {
+                    border-bottom: none;
+                }
+            }
+        }
+        .el-col:last-child {
+            padding-right: 0;
+        }
+    }
+    .board-footer {
+        background-color: #ffffff;
+        border-radius: 8px;
+        -webkit-box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+        height: 475px;
+        .board-footer-title {
+            padding: 15px;
+        }
+    }
+    .rank-img{
+        width: 22px;
+    }
+}

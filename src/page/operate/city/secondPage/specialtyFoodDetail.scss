@@ -1,0 +1,52 @@
+.specialty-food-detail {
+    .padding20 {
+        padding: 20px;
+        color: #666
+    }
+    h3{
+        color: #666;
+        padding-bottom: 20px;
+        font-weight: bolder;
+        border-bottom: 1px solid #666;
+    }
+    .title {
+        font-weight: bolder;
+        margin-top: 20px;
+    }
+    .el-col{
+        font-size: 14px;
+        margin-bottom: 20px;
+        color: #666
+    }
+    .m-b-0 {
+        margin-bottom: 0;
+    }
+    .left {
+        float: left;
+    }
+    .img-list{
+        margin-left: 10px;
+        margin-top: 10px;
+        .span {
+            display: inline-block;
+            width: 125px;
+            height: 125px;
+            font-size: 0;
+            padding: 8px;
+            border: 1px dashed #ccc;
+            .span-box {
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                img {
+                    width:100%;
+                    vertical-align:middle
+                }
+                span {
+                    display:inline-block;
+                    width:0;height:100%;vertical-align:middle
+                }
+            }
+        }
+    }
+}

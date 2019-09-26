@@ -1,0 +1,32 @@
+$height:60px;
+$chatPadding:20px;
+.training-chat{
+    width: 100%;
+    height: calc(100% - 80px);
+    position: relative;
+    z-index: 1;
+    .cannotClick{
+        cursor: not-allowed !important
+    }
+    .chat-main{
+        width: calc(80% - 30px);
+        height: 100%;
+        position: relative;
+        .chat-content{
+            width: 100%;
+            height: calc(100% - 155px);
+            overflow: hidden;
+            position: relative;
+            .after-tip{
+                position: absolute;
+                left: 0 ;
+                top: 0 ;
+                width: 100%;
+                text-align: center;
+            }
+            @import './msgs.scss';
+        }
+        @import './chatSend.scss';
+    }
+    @import './chatSearch.scss';
+}

@@ -1,0 +1,56 @@
+.next-prizes {
+    .backInfo {
+        background-color: #eee;
+    }
+
+    .paddBoth {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .listInfo {
+        line-height: 48px;
+    }
+
+    .flext{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+    }
+    .imgInfo {
+        width: 80px;
+        height: 80px;
+        margin-left: 20px;
+        border: 1px dotted #999;
+    }
+
+    /*
+    *lf scss
+    */
+    .marintop10 {
+        margin-top: 10px;
+    }
+   .basic-info {
+    >>> .el-col {
+            margin-bottom: 10px;
+        }
+    }
+    .info-content {
+        font-size: 14px;
+        color: #666;
+        .el-input {
+            width: 200px;
+        }
+        .el-form-item {
+            margin-bottom: 12px;
+        }
+        .goods-pic {
+            padding: 0 20px;
+        }
+        .line{
+            width: 100%;
+            height: 1px;
+            background: #ccc;
+        }
+    }
+}

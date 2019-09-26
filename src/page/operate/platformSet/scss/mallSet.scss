@@ -1,0 +1,31 @@
+.mall-set{
+    /deep/ .el-form-item{
+        margin-left: 50px;
+        
+        /deep/ .el-form-item{
+            display: inline-block;
+            margin-left: 0;
+            margin-right: 5px;
+            width: 222px;
+        }
+        /deep/ .el-input{
+            width: 222px;
+            margin-bottom: 10px
+        }
+        .m-b-0{
+            margin-bottom: 0;
+        }
+        /deep/ .el-select{
+            width: 222px;
+            /deep/ .el-input{
+                width: 100%;
+                margin: 0
+            }
+        }
+    }
+    .key-words {
+        margin-bottom: 15px;
+    }
+    
+    
+}

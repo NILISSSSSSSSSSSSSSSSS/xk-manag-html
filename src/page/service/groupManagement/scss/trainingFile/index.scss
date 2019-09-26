@@ -1,0 +1,79 @@
+.training-file{
+    width: 100%;
+    height: calc(100% - 80px);
+    padding: 20px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    box-shadow: 0 10px 20px -10px rgba(0,0,0,0.50);
+    border-radius: 15px;
+    overflow: auto;
+    .top{
+        // height: calc(100% - 80px);
+        width: 100%;
+        box-sizing: border-box;
+    }
+    th{
+        text-align: center
+    }
+    .bottom{
+        height: 60px;
+        padding-top: 40px;
+        box-sizing: border-box;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        position: relative;
+        .search-box{
+            display: inline-block;
+            height: 40px;
+        }
+        .group-upfile{
+            position: absolute;
+            left: 230px;
+            .el-button,.el-button--primary{
+                margin-top: 4px;
+            }
+        }
+        .el-pagination{
+            text-align: right !important;
+        }
+    }
+    .el-dialog__wrapper{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        .el-dialog{
+            height: 0;
+            position: relative;
+            .el-dialog__header{
+                display: none;
+            }
+            .load-box{
+                position: absolute;
+                left: 50%;
+                top:50%;
+                transform: translate(-50%,-50%);
+                width: 360px;
+                height: 360px;
+                // background: rgba(255,255,255,0.50);
+                text-align: center;
+                .el-progress__text{
+                    color: #fff
+                }
+                p{
+                    padding-top: 10px;
+                    color: #fff
+                }
+            }
+        }
+    }
+    .file-name{
+        display: flex;
+        line-height: 20px;
+        img{
+            height: 20px;
+            margin-right: 5px
+        }
+    }
+}

@@ -1,0 +1,100 @@
+.order-list {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    .img-box {
+        padding: 0 20px;
+    }
+    h3 {
+        color: rgb(102,102,102);
+        padding: 10px 20px 0;
+        font-weight: bolder;
+    }
+    h3:after {
+        content: '';
+        display: block;
+        margin-top: 10px;
+        width: 100%;
+        height: 1px;
+        background-color: rgba(102,102,102, .5);
+    }
+    .examine-dialog {
+        margin-bottom: 20px;
+    }
+    /deep/ .el-row {
+        font-size: 14px;
+        color: #666666;
+        >>> .el-col {
+            margin-bottom: 10px;
+        }
+    }
+    .list-content {
+        padding: 0 40px;
+        .title {
+            color: rgb(102,102,102);
+            font-weight: bolder;
+            padding: 0 0 20px 0;
+            color: rgb(102,102,102);
+        }
+        .title:after {
+            content: '';
+            display: block;
+            margin-top: 10px;
+            width: 100%;
+            height: 1px;
+            background-color: rgba(102,102,102, .5);
+        }
+        .box-card {
+            margin-top: 10px;
+        }
+    }
+    .btn-group {
+        text-align: center;
+        /deep/ .el-button {
+            margin: 0 10px
+        }
+    }
+}
+.el-form-item{
+    margin-bottom: 0
+}
+.way-info{
+    .new-logistic {
+        color: #f54040;
+        font-weight: 700;
+    }
+    .el-col {
+        border-left: 1px dashed #ccc;
+        padding: 0 20px 10px 60px;
+        position: relative;
+        span{
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background: #fff;
+            border: 2px solid #1890FF;
+            border-radius: 50%;
+            position: absolute;
+            left: -4px;
+            top: 5px;
+        }
+        i{
+            padding-left: 5px;
+            padding-right: 5px;
+            font-size: 14px;
+            font-style: normal;
+            color: #fff;
+            position: absolute;
+            left: 12px;
+            top: 0;
+            background-color: #f13f40;
+        }
+    }
+}
+.iframWebPage {
+    height: 655px;
+    iframe {
+        width: 375px;
+        height: 667px;
+    }
+}

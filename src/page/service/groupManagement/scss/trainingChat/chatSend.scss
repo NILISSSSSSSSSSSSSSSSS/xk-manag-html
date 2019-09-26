@@ -1,0 +1,89 @@
+.chat-send{
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #FFFFFF;
+    box-shadow: 0 10px 20px -10px rgba(0,0,0,0.50);
+    border-radius: 15px;
+    .extend-btn{
+        width: 100%;
+        height: 50px;
+        border-bottom: 1px solid #ddd;
+        box-sizing: border-box;
+        .btn{
+            float: left;
+            width: 30px;
+            height: 30px;
+            margin: 10px;
+            margin-left: 20px;
+            text-align: center;
+            line-height: 30px;
+            color: #FFFFFF;
+            cursor: pointer;
+            position: relative;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            .xk-image-upload{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                .el-upload{
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+    .extend-btn:after{
+        content: '';
+        clear: both;
+    }
+    .extend-btn::after{
+        content: '';
+        clear: both;
+    }
+    .chat-textarea{
+        width: 100%;
+        height: 100px;
+        box-sizing: border-box;
+        padding: 10px;
+        position: relative;
+        textarea{
+            width: 100%;
+            height: 100%;
+            font-size: 16px;
+            box-sizing: border-box;
+            background: #ffffff;
+            border: 0;
+            outline: none;
+            resize: none;
+            color: #666666;
+            padding-right: 80px;
+        }
+        .send-btn{
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            background: #9795E3;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            text-align: center;
+            color: #ffffff;
+            cursor: pointer;
+            user-select: none;
+            div{
+                height: 30px;
+            }
+            div:first-child{
+                line-height: 40px;
+            }
+        }
+    }
+}

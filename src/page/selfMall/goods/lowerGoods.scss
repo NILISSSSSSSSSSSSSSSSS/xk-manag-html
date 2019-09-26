@@ -1,0 +1,22 @@
+
+.lower-goods{
+    .pubBackground {
+        background-color: #fff;
+        padding: 20px;
+    }
+    .listInfo {
+        line-height: 48px;
+    }
+    .picList{
+        height: 80px;
+    }
+    .picList img{
+        width: 80px;
+        height: auto;
+    }
+    /deep/ .el-form-item__content {
+        /deep/ .el-form-item{
+            margin-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,59 @@
+.city-transaction {
+    .xk-table {
+        width: 100%;
+        font-size: 14px;
+        color: #606266;
+        border-collapse: collapse;
+        .cell {
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: normal;
+            word-break: break-all;
+            line-height: 23px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        td, th{
+            padding: 12px 0;
+            min-width: 90px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            text-overflow: ellipsis;
+            vertical-align: middle;
+            border-bottom: 1px solid #ebeef5;
+            border-right: 1px solid #d8d8d8;
+            text-align: center;
+        }
+        th{
+            border-right: none;
+        }
+        tbody{
+            tr{
+                border-left: 1px solid #d8d8d8;
+            }
+        }
+        .xk-thead{
+            width: 100%;
+            background-image: linear-gradient(-248deg, #4A90FA 0%, #8E78FF 100%);
+            tr{
+                background-color: transparent;
+                th {
+                    text-align: center;
+                    background: transparent;
+                    color: #ffffff;
+                    border-right: 0 solid #d8d8d8;
+                }
+            }
+        }
+    }
+    .empty-data {
+        text-align: center;
+        height: 60px;
+        line-height: 60px;
+        font-size: 14px;
+        color: #606266;
+    }
+}

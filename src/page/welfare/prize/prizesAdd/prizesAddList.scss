@@ -1,0 +1,66 @@
+.prizes-add-list {
+    .el-form-item {
+        margin-bottom: 20px;
+    }
+
+    .dialog-footer {
+        text-align: center
+    }
+    .box-card {
+        width: 1000px;
+    }
+    .img-list-goods {
+        span{
+            display: inline-block;
+            padding: 5px;
+            border: 1px dashed #ccc;
+            margin: 0 5px;
+            width: 160px;
+            height: 160px;
+            overflow: hidden;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    /deep/ .el-select{
+        width: 40%;
+        .el-input{
+            width: 100%;
+        }
+    }
+    /deep/ .el-input{
+        width: 40%;
+    }
+    /deep/ .el-cascader {
+        .el-input {
+            width: 100%;
+        }
+    }
+    /deep/ .avatar-uploader .el-upload {
+        border: 1px dashed #d9d9d9;
+        border-radius: 6px;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+      }
+      /deep/ .avatar-uploader .el-upload:hover {
+        border-color: #409EFF;
+      }
+      /deep/ .avatar-uploader-icon {
+        font-size: 28px;
+        color: #8c939d;
+        width: 148px;
+        height: 148px;
+        line-height: 148px;
+        text-align: center;
+      }
+      /deep/ .avatar {
+        width: 148px;
+        height: 148px;
+        display: block;
+      }
+      .m-b-0 {
+          margin-bottom: 0;
+      }
+}

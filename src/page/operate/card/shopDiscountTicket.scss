@@ -1,0 +1,9 @@
+.shop-discount-ticket {
+    /deep/ .el-input,
+    .el-select {
+        width: 100%
+    }
+    /deep/ .el-row{
+        margin-bottom: 15px
+    }
+}

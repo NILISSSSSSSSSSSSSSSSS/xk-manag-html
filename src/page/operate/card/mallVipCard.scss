@@ -1,0 +1,21 @@
+.mall-vip-card {
+    /deep/ .el-input,
+    .el-select {
+        width: 100%
+    }
+}
+.dialog-visible {
+    /deep/ .el-input,
+    .el-date-editor,
+    .el-select {
+        width: 100%!important
+    }
+}
+.detail-dialog {
+    /deep/ .el-row{
+        margin-bottom: 15px;
+        .el-table th{
+            padding: 5px 0
+        }
+    }
+}

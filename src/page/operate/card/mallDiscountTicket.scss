@@ -1,0 +1,15 @@
+.mall-discount-ticket{
+    /deep/ .el-input,
+    .el-date-editor,
+    .el-select {
+        width: 100%;
+    }
+    .detail-dialog {
+        /deep/ .el-table th {
+            padding: 5px 0;
+        }
+    }
+    /deep/ .el-row{
+        margin-bottom: 15px
+    }
+}

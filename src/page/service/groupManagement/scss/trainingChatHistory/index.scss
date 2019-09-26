@@ -1,0 +1,84 @@
+$height:60px;
+$chatPadding:20px;
+.training-chatHistory{
+    width: 100%;
+    height: calc(100% - 80px);
+    padding: 20px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    box-shadow: 0 10px 20px -10px rgba(0,0,0,0.50);
+    border-radius: 15px;
+    .chat-history{
+        height: calc(100% - 60px);
+        overflow: hidden;
+        margin-bottom: 20px;
+        position: relative;
+        .pull-tip{
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+            text-align: center
+        }
+        .all-history{
+            padding-top: 10px;
+            min-height: calc(100% + 1px);
+            .refresh-box{
+                width: 100%;
+                position: relative;
+                text-align: center;
+                canvas{
+                    position: absolute;
+                    left: 50%;
+                    top: -60px;
+                    margin-left: -25px;
+                }
+                img{
+                    width: 30px;
+                }
+            }
+            .one-history{
+                width: 100%;
+                margin: 20px 0;
+                .nick-time{
+                    width: 100%;
+                    height: 30px;
+                    line-height: 30px;
+                    display: flex;
+                    .nick{
+                        max-width: 70%;
+                        color: #9795E3;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        box-sizing: border-box;
+                    }
+                    .time{
+                        margin-left: 20px;
+                        text-align: right;
+                        color: #9795E3;
+                        box-sizing: border-box;
+                    }
+                }
+                
+                .content{
+                    width: 100%;
+                    // opacity: 0.68;
+                    background: #FFFFFF;
+                    border-radius: 6px;
+                    word-break: break-all;
+                    padding: 10px;
+                    box-sizing: border-box;
+                    color: rgba(0,0,0,0.68)
+                }
+                
+            }
+        }
+    }
+    .search-box{
+        height: 40px;
+        .el-input{
+            width: 30%;
+        }
+    }
+}
